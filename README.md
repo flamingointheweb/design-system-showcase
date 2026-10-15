@@ -6,7 +6,7 @@ A themed design system where every text colour is checked against WCAG AA on eve
 
 ![The demo page: a course card and the contrast matrix in the Cream & Gold brand](docs/screenshot.png)
 
-**Live demo:** [design-system-showcase-sage.vercel.app](https://design-system-showcase-sage.vercel.app)
+**Live demo:** [ds.yennyotero.com](https://ds.yennyotero.com)
 
 ## The problem
 
