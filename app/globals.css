@@ -1,0 +1,55 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Switching brand is a cross-fade, not a jump. Everything themed reads its
+   colours and radii from custom properties, so one transition rule covers it. */
+.themed,
+.themed * {
+  transition:
+    background-color 280ms ease,
+    color 280ms ease,
+    border-color 280ms ease,
+    border-radius 280ms ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .themed,
+  .themed * {
+    transition: none;
+  }
+}
+
+.themed :focus-visible {
+  outline: 2px solid var(--ink);
+  outline-offset: 2px;
+}
+
+.themed dialog::backdrop {
+  background: rgb(0 0 0 / 0.4);
+}
+
+.themed button {
+  cursor: pointer;
+  font: inherit;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
