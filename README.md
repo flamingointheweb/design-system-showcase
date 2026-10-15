@@ -1,10 +1,12 @@
 # Three brands, one codebase
 
+[![CI](https://github.com/flamingointheweb/design-system-showcase/actions/workflows/ci.yml/badge.svg)](https://github.com/flamingointheweb/design-system-showcase/actions/workflows/ci.yml)
+
 A themed design system where every text colour is checked against WCAG AA on every pull request. If a colour drops below 4.5:1 on any surface it sits on, CI fails and the change cannot ship.
 
 ![The demo page: a course card and the contrast matrix in the Cream & Gold brand](docs/screenshot.png)
 
-**Live demo:** _coming soon_
+**Live demo:** [design-system-showcase-sage.vercel.app](https://design-system-showcase-sage.vercel.app)
 
 ## The problem
 
